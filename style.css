@@ -88,14 +88,6 @@ footer p {
     width: 8%;
    
 }
-
-.bildeimidten {
-	display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-
 hr {
     border: 0;
     height: 1px;
@@ -104,30 +96,30 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* URLz of d00m - gotustyle */
+/* Link stiler */
 
 a {
     color: #0b5f79;
     text-decoration: none;   
 }
 
-section a {
+main a {
     color: #0b5f79;
     text-decoration: underline;
 }
 
-section a:link, section a:visited {
+main a:link, main a:visited {
     color: #0b5f79;
     text-decoration: underline;
 }
 
-section a:hover {
+main a:hover {
     color: #063a4a;
     text-decoration: underline;
 }
 
 
-/* menyen */
+/* Meny stil */
 
 nav,
 nav ul,
@@ -173,7 +165,7 @@ nav ul li a:hover {
 }
 
 }
-/* dropdownzzz stilen */
+/* Dropdown meny stil */
 nav ul {list-style: none;padding: 0px;margin: 0px;} 
   li ul {display: none;}
   ul li a {display: block; background: white ;padding: 5px 10px 5px 10px;text-decoration: none;
@@ -184,7 +176,7 @@ nav ul {list-style: none;padding: 0px;margin: 0px;}
   li:hover li a:hover {background: #c0c0c0;}
   #drop-nav li ul li {border-top: 0px;}
   
-/* layoutenz generelt */
+/* Design av layout */
 
 .container {
     text-align: center;
@@ -192,10 +184,10 @@ nav ul {list-style: none;padding: 0px;margin: 0px;}
     margin: auto;
 }
 
-section {
+main {
     margin: 20px;
     margin-bottom: 80px;
-    max-width: 900px;
+    max-width: 1800px;
     background: #ffffff;
     overflow: auto;
     padding: 30px;
@@ -204,19 +196,27 @@ section {
     display: inline-block;
 }
 
+#main-column, h1, h2 , h3 {
+    margin:auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
 #column-left {
     float: left;
-    width: 540px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    width: 33%;
+}
+
+#column-mid {
+    float: right;
+    width: 33%;
 }
 
 #column-right {
     float: right;
-    width: 280px;
-    padding-right: 30px;
-    padding-bottom: 10px;
+    width: 33%;
 }
 
 footer {
@@ -229,49 +229,4 @@ footer {
 
 footer, .push {
     height: 8px;
-}
-
-.superlink {
-    font-size: 25px;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    color: darkslateblue;
-}
-.superlink:hover {
-    color:darkorange;
-}
-    
-
-/* prog stuff */
-
-input, button {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.sammestr1 {
-    margin-left: 33px;
-}
-.sammestr2 {
-    margin-left: 12px;
-}
-.sammestr3 {
-    margin-left: 50px;
-}
-
-div #kake, #kake1, #kake2, #kake3, #kake4, #kake5, #kake6 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 500px;
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-span {
-  padding: 6px;
-  min-width: 20px;
-  text-align: center;
-}
-
-.negative {
-  color: red;
 }
