@@ -159,20 +159,6 @@ nav ul li a:hover {
     background-color: #555555;
 }
 
-.mobknapp {
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: #34495E url(../img/nav.svg) no-repeat center center;
-  height: 40px;
-  width: 40px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-
-}
 /* Dropdown meny stil */
 nav ul {list-style: none;padding: 0px;margin: 0px;} 
   li ul {display: none;}
@@ -249,6 +235,10 @@ footer, .push {
     width: 400px;
     }
     
+    .container img {
+        width: 100%;
+    }
+    
     #column-left {
     float: left;
     width: 100%;
@@ -275,10 +265,6 @@ footer, .push {
     nav ul li {
     width: 100%;
     float: none;
-    }
-    
-    .mobknapp {
-    display: block;
     }
     
     header {
