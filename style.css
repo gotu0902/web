@@ -66,16 +66,17 @@ footer p {
 }
 
 .logo {
-    text-align: center; 
-    width: 8%;
+    position: relative;
    
 }
 
 .social-icons {
-    float: right;
+    float: none;
     opacity: 0.6;
-    margin-right: 30px;
-    margin-top: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 30px;;
+    height: 30px;
 }
 
 .social-icons:hover {
@@ -158,6 +159,19 @@ nav ul li a:hover {
     background-color: #555555;
 }
 
+.mobknapp {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #34495E url(../img/nav.svg) no-repeat center center;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+
 }
 /* Dropdown meny stil */
 nav ul {list-style: none;padding: 0px;margin: 0px;} 
@@ -224,10 +238,13 @@ footer {
 footer, .push {
     height: 120px;
 }
-/* enheter med mindre skjerm */
 
-@media only screen and (max-width: 665px) {
-    video {
+
+/* Mindre skjermer */
+
+@media only screen and (max-width: 480px) {
+    
+    .container {
     width: 400px;
     }
     
@@ -248,26 +265,59 @@ footer, .push {
     width: 100%;
     padding-bottom: 10px;
     }
+    
+    nav {
+    width: 100%;
+    text-align: center;
+    }
+    
+    nav ul li {
+    width: 100%;
+    float: none;
+    }
+    
+    .mobknapp {
+    display: block;
+    }
+    
+    header {
+    width: 100%;
+    }
+    
+    .logo {
+    margin-left: 25%;
+    width: 50%;
+    float: none;
+    }
+
 }
 
-/* Quick fix av førstesiden for medium store skjermer */
+/* Medium store skjermer */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width:965px){
+
+    .container {
+    width: 100%;
+    }
+    
     #column-left {
-    float: left;
-    width: auto;
+    width: 100%;
     padding-bottom: 10px;
     }
     
     #column-right {
-    float: left;
-    width: auto;
+    width: 100%;
     padding-bottom: 10px;
     }
     
     #column-mid {
-    float: left;
     width: 100%;
     padding-bottom: 10px;
     }
+    
+    
+    header {
+    width: 100%;
+    }
+    
 }
