@@ -180,10 +180,11 @@ nav ul {list-style: none;padding: 0px;margin: 0px;}
 
 .scalepic {
     width: 100%;
+    box-shadow: 1px 1px 1px 1px black;
 }
 
 .miniscalepic {
-    width: 70%;
+    width: 100%;
 }
 
 main {
@@ -210,16 +211,23 @@ main {
 #column-left {
     float: left;
     width: 33%;
+    text-align: center;
 }
 
 #column-mid {
     float: right;
     width: 33%;
+    text-align: center;
 }
 
 #column-right {
     float: right;
     width: 33%;
+    text-align: center;
+}
+
+.listeleft {
+    text-align: left;
 }
 
 footer {
