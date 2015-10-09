@@ -229,6 +229,9 @@ main {
 .listeleft {
     text-align: left;
 }
+.listeright {
+    text-align: right;
+}
 
 footer {
     background-color: #222222;
