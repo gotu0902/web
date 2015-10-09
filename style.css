@@ -178,6 +178,14 @@ nav ul {list-style: none;padding: 0px;margin: 0px;}
     margin: auto;
 }
 
+.scalepic {
+    width: 100%;
+}
+
+.miniscalepic {
+    width: 70%;
+}
+
 main {
     margin: 20px;
     margin-bottom: 80px;
@@ -229,12 +237,12 @@ footer, .push {
 
 /* Mindre skjermer */
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     
     .container {
     width: 400px;
     }
-    
+    /*Scaler bilder i container på mobilsiden */
     .container img {
         width: 100%;
     }
