@@ -207,27 +207,30 @@ main {
     padding-bottom: 10px;
 }
 
+#centertxt {
+    text-align: center;
+}
 
 #column-left {
     float: left;
     width: 33%;
-    text-align: center;
 }
 
 #column-mid {
     float: right;
     width: 33%;
-    text-align: center;
 }
 
 #column-right {
     float: right;
     width: 33%;
-    text-align: center;
 }
 
 .listeleft {
     text-align: left;
+}
+.listeright {
+    text-align: right;
 }
 
 footer {
