@@ -317,14 +317,16 @@ footer, .push {
     padding-bottom: 10px;
     }
     
-    nav {
+    nav li {
+    display: inline-block;
+    position: relative;
     width: 100%;
     text-align: center;
     }
     
-    nav ul li {
-    width: 100%;
-    float: none;
+    li:hover ul {
+    display: flex; 
+    position: relative; 
     }
     
     header {
