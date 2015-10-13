@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>ØSOP | Forsiden</title>
+ <meta name="description" content="Vi er en bedrift som spesialiserer oss på utflukter og opplevelser. Vi yter 100% for å gi deg en fantastisk og spenningsfylt opplevelse">
+ <meta name="keywords" content="opplevelser">
+ <link rel="stylesheet" content="text/css" href="style.css" media="screen" />
+ <script src="javascript.js"></script>
+</head>
+<body>
+<header>
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="Banner \ logo øverst på nettsiden"></a>
+</header>
+ <nav>
+  <ul>
+    <li><a href="index.html">Hjem</a></li>
+    <li><a href="prisliste.html">Prisliste</a></li>
+    <li><a href="omoss.html">Om oss</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="#">Opplevelser</a>
+      <ul id="drop-nav">
+        <li><a href="go.html">Go-Kart</a></li>
+		<li><a href="paint.html">Paintball</a></li>
+        <li><a href="dykking.html">Dykking</a></li>
+	  </ul>
+	</ul>
+ </nav>
+<div class="container">
+ <main>
+  <div id="column-main">
+    <h2>Kontakt oss</h2>
+    <hr>
+	<br>
+    <img src="images/indexbanner.jpg" alt="banner bilde paintball dykking og gokart" class="scalepic"> 
+    <br>
+    <br>
+    <br> 
+ <div id="column-left">
+    <h2></h2>
+    <hr>
+	<br>
+    <form id="kontaktskjema" action="mailto:geir.o.uren@hiof.no" method="POST">	
+				<label>
+					<span>Navn\Bedrift:</span>
+					<input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+				</label>
+				<label>
+					<span>Din\deres kontaktmail:</span>
+					<input placeholder="Please enter your email address" type="email" tabindex="2" required>
+				</label>
+				<label>
+					<span>Melding:</span>
+					<textarea tabindex="5" required></textarea>
+				</label>
+        <button name="submit" type="submit" id="knapp">Kontakt oss!</button>
+    </form>
+    <br>
+   </div>
+   <div id="column-right">
+   <h2></h2>
+   <hr>
+   <br>
+   </div>
+   <div id="column-mid">
+      <h2></h2>
+	  <hr>
+      <br>
+       <h4>Ønsker du kjære leser og komme kontakt med oss, fyll ut skjemaet til venstre, kontakt oss på <a href="http://www.facebook.com">Facebook<br><br>Eller direkte på <a href="mailto:post@ostfoldopplevelser.no">på e-post.</a></h4>
+     </div>
+     </div>
+    </main>  
+   </div>
+<div class="push"></div>
+<footer>
+  <p>
+    <a href="https://www.facebook.com/"><img class="social-icons" src="images/fb.png" alt="Lik oss på Facebook"></a>
+    <a href="https://www.instagram.com/"><img class="social-icons" src="images/instagram.png" alt="Lik oss på instagram"></a>
+    <a href="https://www.twitter.com/"><img class="social-icons" src="images/twitter.png" alt="Lik oss på twitter"></a>
+    <a href="https://www.youtube.com/"><img class="social-icons" src="images/youtube.png" alt="Lik oss på youtube"></a>
+    <br>
+    Copyright &copy; 2015 Østfold opplevelser. Alle rettigheter. Facebook og YouTube-ikoner av 
+    <a href="http://martz90.deviantart.com/art/Circle-Icons-Pack-371172325">Martz90</a>.
+    <br>
+    E-post: <a href="mailto:post@ostfoldopplevelser.no">post@ostfoldopplevelser.no</a>
+    <br>
+    Telefon: 123 45 678
+    <br>
+    Adresse: Norge
+  </p>
+</footer>
+<script>
+function oppstart() {
+
+	var inputs = document.createElement("input");
+	var kontakt = {};
+	
+	kontakt.autofocus   = "autofocus" in inputs;
+    
+	kontakt.required    = "required" in inputs;
+    
+	kontakt.placeholder = "placeholder" in inputs;
+
+	if(!kontakt.autofocus) {
+	}
+	
+	if(!kontakt.required) {
+	}
+    
+	if(!kontakt.placeholder) {
+	}
+	
+	var epost = document.getElementById("knapp");
+	if(epost) {
+        
+		epost.onclick = function () {
+			this.innerHTML = '...sender';
+		}
+	}
+
+}
+</script>
+</body>
+</html>
