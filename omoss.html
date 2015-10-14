@@ -31,45 +31,56 @@
 <div class="container">
  <main>
   <div id="column-main">
-    <h2>Kontakt oss</h2>
+    <h2>Om oss</h2>
     <hr>
 	<br>
     <img src="images/alle-banner.jpg" alt="banner bilde paintball dykking og gokart" class="scalepic"> 
-    <br>
-    <br>
-    <br> 
- <div id="column-left">
-    <h2></h2>
+    <p></p> 
+   </div>
+   <div id="column-left">
+    <div id="centertxt">
+    <h2>Vår policy</h2>
     <hr>
 	<br>
-    <form id="kontaktskjema" action="mailto:geir.o.uren@hiof.no" method="POST">	
-				<label>
-					<span>Navn\Bedrift:</span>
-					<input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
-				</label>
-				<label>
-					<span>Din\deres kontaktmail:</span>
-					<input placeholder="Please enter your email address" type="email" tabindex="2" required>
-				</label>
-				<label>
-					<span>Melding:</span>
-					<textarea tabindex="5" required></textarea>
-				</label>
-        <button name="submit" type="submit" id="knapp">Kontakt oss!</button>
-    </form>
+    <p>
+Vi i Østfold Opplevelser har alltid ment at adrenalin, utfordringer og opplevelser er viktige deler av livet vårt. <br><br>Vi vil gi deg som henvender deg og bruker tjenestene her hos oss en opplevelse du sent vil glemme.<br><br> Å utforske og oppleve hav, himmel, fjell, og skog og ha det gøy samtidig er vårt privilegium.<br>
+    </p>
     <br>
+    <br>
+    <br>
+       <img src="images/policy.jpg" alt="policy" width="350">
+    </div>
    </div>
    <div id="column-right">
-   <h2></h2>
+    <div id="centertxt">
+   <h2>Sikkerhet</h2>
    <hr>
    <br>
+   <p>
+Vi setter din sikkerhet høyest av alt. <br><br>Våre instruktører er godt kvalifiserte innen førstehjelp, vi har solid utstyr med på våre opplevelser, og vi har god kompetanse i bruk av dette.<br><br> Vi har alltid med oss nødpeilesender og satellittelefon der det ikke er mobildekning, og vi avlyser heller en tur framfor å ta unødige risikoer. <br> <br>Vi erkjenner at det er naturkreftene som bestemmer, og vi spiller alltid på lag med naturen og været. Du kan være trygg når du er med på nye opplevelser her hos oss.</p>
+    <br>
+    <br>
+    <br>
+      <img src="images/safety.jpg" alt="safety, man, helmet, cartoon,"> 
+    <br>
+    <br>
+   </div>
    </div>
    <div id="column-mid">
-      <h2></h2>
+    <div id="centertxt">
+      <h2>Samarbeid</h2>
 	  <hr>
       <br>
-       <h4>Ønsker du kjære leser og komme kontakt med oss, fyll ut skjemaet til venstre, kontakt oss på <a href="http://www.facebook.com">Facebook<br><br>Eller direkte på <a href="mailto:post@ostfoldopplevelser.no">på e-post.</a></h4>
-     </div>
+      <p>
+Vi ønsker at du skal lære noe av å være på tur med oss. <br>
+        Vi kunne gjort det meste for deg, men det ligger begrenset mestring og utvikling i det. <br>Du får testet dine grenser og ferdigheter og vi er der for å guide deg igjennom det. <br><br>Det er gjennom utprøvning at virkelig mestring finner sted, og det er gjennom mestring av naturens krav at opplevelsene og eventyret føles sterkest. <br><br>Vi samarbeider med mange mindre bedrifter i hele norge og har en høy standard. Hos oss vil du finne dine utfordringer og din opplevelse!</p>
+    <br>
+    <br>
+    <br>
+       <img src="images/samarbeid.jpg" alt="hands, puzzle" width="350">
+    <br>
+    <br> 
+       </div>
      </div>
     </main>  
    </div>
@@ -91,36 +102,5 @@
     Adresse: Norge
   </p>
 </footer>
-<script>
-function oppstart() {
-
-	var inputs = document.createElement("input");
-	var kontakt = {};
-	
-	kontakt.autofocus   = "autofocus" in inputs;
-    
-	kontakt.required    = "required" in inputs;
-    
-	kontakt.placeholder = "placeholder" in inputs;
-
-	if(!kontakt.autofocus) {
-	}
-	
-	if(!kontakt.required) {
-	}
-    
-	if(!kontakt.placeholder) {
-	}
-	
-	var epost = document.getElementById("knapp");
-	if(epost) {
-        
-		epost.onclick = function () {
-			this.innerHTML = '...sender';
-		}
-	}
-
-}
-</script>
 </body>
 </html>
